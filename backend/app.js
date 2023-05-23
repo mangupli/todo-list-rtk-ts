@@ -31,7 +31,7 @@ app.use((error, req, res, _next) => {
 });
 
 app.use('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend-rtk/public/index.html'));
+  res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
 });
 
 app.listen(PORT, () => console.log(`server started at ${PORT}`));
